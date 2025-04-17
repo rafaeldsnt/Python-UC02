@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    audio {
+        width: 80%;
+        margin: 20px 0;
+        background-color: #e41515;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    audio:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .video-container {
+        max-width: 1000px;
+        margin: 20px auto;
+        border: 3px solid #333;
+        border-radius: 15px;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        display: block;
+
+    }
+
+    video:hover {
+        box-shadow: 0 0 100px rgba(241, 7, 7, 0.2);
+    }
+
+    .mapa {
+        max-width: 1000px;
+        margin: 20px auto;
+        border-radius: 12px;
+        transition: transform 0.3s;
+    }
+
+    .mapa:hover {
+        transform: scale(1.10);
+    }
+
+    iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <!-- Elemento HEADER -->
+    <header>
+    </header>
+
+    <!-- Ememento MAIN - Área principal da página -->
+    <main>
+
+        <p>Audio</p>
+
+        <audio controls>
+            <source src="https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/master/sample.mp3"
+                type="audio/mpeg">
+            <source src="https://commons.wikimedia.org/audiosample.ogg" type="audio/ogg">
+            Seu navegador não suporta áudio HTML5.
+        </audio>
+
+        <br>
+
+        <p>Vídeo</p>
+
+
+        <video controls class="video-container">
+            <source src="https://www.sample-videos.com/video321/mp4/480/big_buck_bunny_480p_30mb.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+
+        <br>
+
+
+
+        <p>Mapa</p>
+
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991440608207!2d2.292292615509614!3d48.858373608662095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1spt-BR!2sbr!4v1713123456789!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.9528330208227!2d-43.1866968247015!3d-22.50595277953928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x990808b7f0e927%3A0xcd499c7996513131!2sR.%20Alfredo%20Pach%C3%A1%20-%20Petr%C3%B3polis%2C%20RJ%2C%2025685-210!5e0!3m2!1spt-BR!2sbr!4v1744849491028!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+
+
+
+    </main>
+
+    <!-- Elemento FOOTER - Roda-pé da página -->
+    <footer id="footer">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

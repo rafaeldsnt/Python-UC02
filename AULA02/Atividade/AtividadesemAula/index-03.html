@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python 02 - Atividade em Aula</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    h1 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+
+    }
+
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        font-size: center;
+        font-style: normal;
+
+    }
+
+    footer {
+        background-color: rgb(219, 213, 213);
+        margin-top: 2rem;
+        border-radius: 30rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        border: 2px solid rgb(10, 10, 10);
+        text-align: center;
+        font-size: 12;
+       
+    }
+
+    img {
+        align-content: center;
+    }
+
+    th {
+        margin: 0;
+        background-color: lightgray;
+        
+   
+
+    }
+
+    td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    tr:hover {
+        background-color: #b19999;
+    }
+</style>
+
+<body>
+    <!-- Elemento HEADER -->
+    <header>
+        <div class="row">
+        <div class="col-sm-4">
+        <h1 class="container"><i class="fa-solid fa-house"></i> Título Principal do Site</h1>
+        </div>
+        <div class="col-sm-3">
+            
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+        <div class="col-sm-3">
+                        <p><i class="fa-regular fa-circle-info"></i><span>Seção 1</span></p>
+                        <p><i class="fa-solid fa-book"></i><span>Seção 1</span></p>
+                        <p><i class="fa-solid fa-question"></i><span>Seção 1</span></p>            
+        </div>
+    </div>
+    </header>
+
+    <!-- Ememento MAIN - Área principal da página -->
+    <main class="container text-center">
+        <section id="section2">
+            <h2 class="text-info">
+                <i class="fa-solid fa-house">
+                    Lista de Tabelas de valores de Celulares
+                </i>
+            </h2>
+            <table>
+
+                <!-- Head da Tabela -->
+                <thead>
+                    <!-- Linha -->
+                    <tr>
+                        <th>Foto</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <!-- Corpo da tabela -->
+                <tbody>
+
+                    <!-- Linha -->
+                    <tr>
+                        <td><img  class="mx-auto d-block" src="https://placehold.co/100x100?text=Iphone"> </td>
+                        <td><p class="lead"> Lorem ipsum dolor sit amet. <br> 
+                                <span class="">Cor: Branco</span> <br>
+                                <span class="">Material: Sintético/plástico</span><br>
+                                <span style="background-color: #149445; font-size: large;"> Disponível </span> 
+                        </p></td>
+                        <td>
+                            <p>R$ 2.990,90</p>
+                            <p><del>R$ 4.990,90</del></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img  class="mx-auto d-block" src="https://placehold.co/100x100?text=Samgung"> </td>
+                        <td><p class="lead"> Lorem ipsum dolor sit amet. <br> 
+                                <span class="">Cor: Amarelo</span> <br>
+                                <span class="">Material: Sintético/plástico</span><br>
+                                <span> <del>Disponível </del></span> 
+                        </p></td>
+                        <td>
+                            <p>R$ 1.990,90</p>
+                            <p><del>R$ 4.990,90</del></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img  class="mx-auto d-block" src="https://placehold.co/100x100?text=Xiomi"> </td>
+                        <td><p class="lead"> Lorem ipsum dolor sit amet. <br> 
+                                <span class="">Cor: Azul</span> <br>
+                                <span class="">Material: Sintético/plástico</span><br>
+                                <span style="background-color: #149445; font-size: large;"> Disponível </span> 
+                        </p></td>
+                        <td>
+                            <p>R$ 500,90</p>
+                            <p><del>R$ 1.990,90</del></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img  class="mx-auto d-block" src="https://placehold.co/100x100?text=CelGen"> </td>
+                        <td><p class="lead"> Lorem ipsum dolor sit amet. <br> 
+                                <span class="">Cor: Preto</span> <br>
+                                <span class="">Material: Sintético/plástico</span><br>
+                                <span> <del>Disponível </del></span> 
+                        </p></td>
+                        <td>
+                            <p>R$ 700,90</p>
+                            <p><del>R$ 990,90</del></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img  class="mx-auto d-block" src="https://placehold.co/100x100?text=Cel5G"> </td>
+                        <td><p class="lead"> Lorem ipsum dolor sit amet. <br> 
+                                <span class="">Cor: Vermelho</span> <br>
+                                <span class="">Material: Sintético/plástico</span><br>
+                                <span> <del>Disponível </del></span> 
+                        </p></td>
+                        <td>
+                            <p>R$ 100,90</p>
+                            <p><del>R$ 290,90</del></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img  class="mx-auto d-block" src="https://placehold.co/100x100?text=Cel5G"> </td>
+                        <td><p class="lead"> Lorem ipsum dolor sit amet. <br> 
+                                <span class="">Cor: Bege</span> <br>
+                                <span class="">Material: Sintético/plástico</span><br>
+                                <span style="background-color: #149445; font-size: large;"> Disponível </span> 
+                        </p></td>
+                        <td>
+                            <p>R$ 100,90</p>
+                            <p><del>R$ 290,90</del></p>
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Elemento FOOTER - Roda-pé da página -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted p-3">
+            <i class="fa-regular fa-copyright"></i>
+            Rafael dos Santos - RS
+        </p>
+    </footer>
+</body>
+
+</html>

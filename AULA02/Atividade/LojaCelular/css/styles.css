@@ -1,0 +1,140 @@
+
+header {
+    background-color: rgb(5, 8, 39);
+}
+
+footer {
+    background-color: rgb(5, 8, 39);
+    text-align: center;
+    text-justify: auto;
+    color: white
+}
+
+
+main {
+    margin-bottom: 3rem;
+}
+
+hr {
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 100%;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+ }
+
+img.banner {
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-right: 20px;
+    max-width: 50%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.formBanner.banner {
+     margin-top: 100px;
+}
+
+i.banner {
+    margin-top: 100px;
+}
+
+.collapse {
+    &:not(.show) {
+        display: none;
+    }
+}
+
+.collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+
+    &.collapse-horizontal {
+        width: 0;
+        height: auto;
+        @include transition($transition-collapse-width);
+    }
+}
+
+form {
+    font-family: Arial, sans-serif;
+     max-width: 600px;
+     margin: 0 auto;
+     padding: 20px;
+     margin-bottom: 4em;
+     background: #f9f9f9;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+   label {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: bold;
+   }
+   input, textarea {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+   }
+
+   button {
+     background: #badfbb;
+     color: white;
+     padding: 10px 15px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     margin-bottom: 3rem;
+     margin-top: 3rem;
+   }
+
+   
+   button:hover {
+     background: #45a049;
+   }
+   .error {
+     color: red;
+     font-size: 12px;
+     margin-top: -10px;
+     margin-bottom: 10px;
+   }
+ h1 {
+     margin-top: 2rem;
+     margin-bottom: 3rem;
+     margin-left: 3rem;
+
+ }
+
+ h2 {
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     align-items: center;
+     font-size: center;
+     font-style: normal;
+     margin: 0 auto;
+ }
+ 
+ h2:hover {
+       color: #0f3e96;
+   }
+
+
+.button-forms {
+    align-items: center;
+    margin-bottom: 2rem;
+
+}

@@ -61,7 +61,8 @@
     }
 
     .buttonCenter {
-        margin-left: 8rem;
+        
+        margin-bottom: 5rem;
     }
 </style>
 
@@ -110,24 +111,36 @@
         <h2>Teste de Componentes</h2>
         <div class="row ">
             <div class="col-sm">
-                <div id="meuCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="meuCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <!-- Indicadores -->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#meuCarousel" data-bs-slide-to="3"></button>
                     </div>
                     
                     <!-- Slides -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://placehold.co/800x400?text=Slide+1" class="d-block w-100" alt="Primeiro Slide">
+                            <img src="https://placehold.co/800x400/orange/white?text=Slide+1" class="d-block w-100" data-bs-interval="1000" alt="Primeiro Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Título do Primeiro Slide</h5>
+                                <p>Descrição ou conteúdo adicional aqui.</p>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://placehold.co/800x400?text=Slide+2" class="d-block w-100" alt="Segundo Slide">
+                            <img src="https://placehold.co/800x400/red/white?text=Slide+2" class="d-block w-100" data-bs-interval="1000" alt="Segundo Slide">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://placehold.co/800x400?text=Slide+3" class="d-block w-100" alt="Terceiro Slide">
+                            <img src="https://placehold.co/800x400/green/white?text=Slide+3" class="d-block w-100" data-bs-interval="1000" alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/800x400/black/white?text=Slide+4" class="d-block w-100" data-bs-interval="1000" alt="Quarto Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Título do Último Slide</h5>
+                                <p>Descrição ou conteúdo adicional aqui.</p>
+                            </div>
                         </div>
                     </div>
                     
@@ -142,14 +155,41 @@
                     </button>
                 </div>
             </div>
+        </div>
 
-
+        <div class="row mt-5 text-center">
             <div class="col-sm">
-                <button type="button" class="btn btn-primary buttonCenter" data-bs-toggle="modal" data-bs-target="#exemploModal">
-                    Abrir Modal
+                <!-- Modal Pequeno -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemploModal">
+                    Modal Pequeno
+                  </button>
+        
+                <!-- Modal Médio (padrão) -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemploModal">
+                    Modal Médio
+                  </button>
+        
+                <!-- Modal Grande -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemploModal">
+                    Modal Grande
+                  </button>
+        
+                <!-- Modal Extra Grande -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemploModal">
+                    Modal Extra Grande
+                  </button>
+        
+                <!-- Modal em Tela Cheia -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemploModal">
+                    Modal em Tela Cheia
                   </button>
             </div>
 
+           
+        </div>
+
+
+        <div class="row mt-5">
             <div class="col-sm">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -166,13 +206,29 @@
                     </div>
                     <!-- Mais itens podem ser adicionados aqui -->
                   </div>
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                          Título do Item #1
+                        </button>
+                      </h2>
+                      <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Conteúdo do primeiro item do accordion.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Mais itens podem ser adicionados aqui -->
+                  </div>
             </div>
         </div>
     </main>
 
     <!-- Estrutura do Modal -->
 <div class="modal fade" id="exemploModal" tabindex="-1" aria-labelledby="exemploModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exemploModalLabel">Título do Modal</h5>
